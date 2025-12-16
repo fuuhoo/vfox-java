@@ -66,7 +66,7 @@ function UTIL.calculate_shorthand(list)
                 if distribution then
                         major_minor=major_minor.."-"..distribution
                 end
-                print("major_minor",major_minor)
+                -- print("major_minor",major_minor)
                 if not versions_shorthand[major_minor] then
                     versions_shorthand[major_minor] = version
                 else

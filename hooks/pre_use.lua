@@ -10,6 +10,7 @@ function PLUGIN:PreUse(ctx)
         version = ctx.version
     end
     local shorthands = util.calculate_shorthand(ctx.installedSdks)
+    -- printTable(shorthands)
     version=shorthands[version]
     return {
         version = version,
